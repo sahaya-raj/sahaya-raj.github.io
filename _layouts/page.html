@@ -1,0 +1,47 @@
+<html>
+
+	{% include meta.html %}
+
+	<head>
+		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Monda&display=swap" rel="stylesheet">	
+		<link rel="stylesheet" type="text/css" href="/style.css" />
+
+		<style>
+			#navigation>div:nth-child(2){
+				font-size:20px;
+				text-decoration:underline;
+			}
+		</style>
+	
+	</head>
+	<body>
+		<div id="outer_wrapper">
+			<div id="inner_wrapper">
+					<div id="top_bar">
+						<span id="logo" class="noselect" >randomposts</span>
+					</div>
+					
+					<div id="left_bar">
+						<span id="logo" class="noselect" >randomposts</span>
+						
+						
+						<div id="navigation">
+							<div><a href="/index.html" >Posts</a></div>
+							<div><a href="/about/index.html" >About me</a></div>
+						</div>
+					</div>
+					<div id="content" >
+						<div id="header" >
+							<h2>About me </h2>
+						</div>
+						<div id="body">
+						
+
+						</div>
+					</div>
+			</div>
+		</div>
+				
+	</body>
+</html>
