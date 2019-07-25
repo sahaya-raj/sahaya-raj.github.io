@@ -6,6 +6,7 @@
 		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto|Monda&display=swap" rel="stylesheet">	
 		<link rel="stylesheet" type="text/css" href="/style.css" />
+		{% include analytics.html %}
 		<style>
 			#navigation>div:nth-child(1){
 				font-size:20px;
@@ -48,7 +49,8 @@
 									
 								</div>
 							</div>
-						 {% endfor %}														
+						 {% endfor %}
+													
 							
 						</div>
 					</div>
