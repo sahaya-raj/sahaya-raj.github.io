@@ -55,7 +55,7 @@
 		}
 		
 		.card {
-			border:1px solid white;
+			border:1px solid #dbe4ff;
 			width:250px;
 			height:250px;
 			float:left;
@@ -85,7 +85,7 @@
 		}
 		
 		.card:hover{
-			border:1px solid #e4e4e4;
+			border:1px solid #73a0c7;
 			cursor:pointer;
 		}
 		
@@ -151,6 +151,7 @@
 			.card{
 				width:calc(100%);
 				border:0;
+				height:200px;
 			}
 			.card:hover{
 				border:0;
@@ -182,7 +183,7 @@
 			}
 			#logo {
 				font-size: 25px;
-			}
+			}			
 			
 			/* No effect for mobile */
 			#inner_wrapper {
