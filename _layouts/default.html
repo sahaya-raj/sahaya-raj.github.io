@@ -6,7 +6,9 @@
 		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto|Monda&display=swap" rel="stylesheet">	
 		<link rel="stylesheet" type="text/css" href="/style.css" />
+		{% if site.environment == "production" %}
 		{% include analytics.html %}
+		{% endif %}
 		<style>
 			#navigation>div:nth-child(1){
 				font-size:20px;
@@ -43,7 +45,7 @@
 									{{ post.title }}
 								</div>
 								<div class="card_body">
-									{{ post.excerpt }}
+									{{ post.card_info }}
 								</div>
 								<div class="card_footer">
 									
@@ -51,6 +53,8 @@
 							</div>
 						 {% endfor %}
 													
+							
+							
 							
 						</div>
 					</div>
