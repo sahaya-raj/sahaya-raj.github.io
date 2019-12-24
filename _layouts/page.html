@@ -1,3 +1,9 @@
+<!--
+
+	This is about me page
+
+-->
+
 <html>
 
 	{% include meta.html %}
@@ -10,13 +16,6 @@
 		{% if site.environment == "production" %}
 		{% include analytics.html %}
 		{% endif %}
-
-		<style>
-			#navigation>div:nth-child(2){
-				font-size:20px;
-				text-decoration:underline;
-			}
-		</style>
 	
 	</head>
 	<body>
@@ -31,8 +30,9 @@
 						
 						
 						<div id="navigation">
+						<!--
 							<div><a href="/index.html" >Posts</a></div>
-							<div><a href="/about/index.html" >About me</a></div>
+							-->
 						</div>
 					</div>
 					<div id="content" >

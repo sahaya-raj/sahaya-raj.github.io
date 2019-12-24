@@ -8,14 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="/style.css" />
 		{% if site.environment == "production" %}
 		{% include analytics.html %}
-		{% endif %}
-		<style>
-			#navigation>div:nth-child(1){
-				font-size:20px;
-				text-decoration:underline;
-			}
-		</style>
-	
+		{% endif %}	
 	</head>
 	<body>
 		<div id="outer_wrapper">
@@ -29,8 +22,9 @@
 						
 						
 						<div id="navigation">
+						<!--
 							<div><a href="{{site.baseurl}}/" >Posts</a></div>
-							<div><a href="{{site.baseurl}}/about/index.html" >About me</a></div>
+							-->
 						</div>
 					</div>
 					<div id="content" >

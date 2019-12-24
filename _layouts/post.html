@@ -9,13 +9,7 @@
 		{% if site.environment == "production" %}
 		{% include analytics.html %}
 		{% endif %}
-	
-	<style>
-		#body{
-			color: #4545b1;		
-		}
-	</style>
-	
+		
 	</head>
 	<body>
 		<div id="outer_wrapper">
@@ -28,8 +22,11 @@
 						<span id="logo" class="noselect" >randomposts</span>
 						
 						<div id="navigation">
-							<div><a href="/index.html" >Posts</a></div>
-							<div><a href="/about/index.html" >About me</a></div>
+						
+							<div><a href="/index.html" >
+								<i class="far fa-arrow-alt-circle-left"></i>
+							</a></div>
+							
 						</div>
 						
 					</div>
@@ -44,4 +41,5 @@
 			</div>
 		</div>
 	</body>
+	<script src="https://kit.fontawesome.com/09469026d3.js" crossorigin="anonymous"></script>
 </html>
