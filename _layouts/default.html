@@ -22,16 +22,13 @@
 						
 						
 						<div id="navigation">
-						<!--
-							<div><a href="{{site.baseurl}}/" >Posts</a></div>
-							-->
 						</div>
 					</div>
 					<div id="content" >
 						<div id="header" >
-							<h2>Posts </h2>
+							<h1>Posts </h1>
 						</div>
-						<div id="body" onscroll="highlightTopBar()" >
+						<div id="body" >
 						
 						 {% for post in site.posts %}
 							<div class="card" onclick="go('{{ site.baseurl }}{{ post.url }}')" >
@@ -46,10 +43,6 @@
 								</div>
 							</div>
 						 {% endfor %}
-													
-							
-							
-							
 						</div>
 					</div>
 			</div>
@@ -58,14 +51,6 @@
 		<script>
 		function go(p){
 			location.href=p;
-		}
-		function highlightTopBar(){
-			var value = document.getElementById('body').scrollTop;
-			if(value === 0){
-				document.getElementById("header").style.backgroundColor='#f4b41a';
-			}else{
-				document.getElementById("header").style.backgroundColor='#e8ac1b';
-			}
 		}
 		</script>
 		

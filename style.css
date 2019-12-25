@@ -1,13 +1,13 @@
 /* custom styles */
 
-  /* Yellow and blue */
+  /* Black and white */
   :root {
-	--primary-color-lighter:#286994;
-	--primary-color:#143d59;
-	--primary-color-darker:#07304b;   /* unused */
-	--secondary-color-lighter: #e7b53f;  /* unused */
-	--secondary-color: #f4b41a;
-	--secondary-color-darker: #d69806;
+	--primary-color-lighter:#C0C0C0;
+	--primary-color:black;
+	--primary-color-darker:black;   /* unused */
+	--secondary-color-lighter: white;  /* unused */
+	--secondary-color: white;
+	--secondary-color-darker: #C0C0C0;
   }
 
   
@@ -64,14 +64,14 @@
 			width: calc(84% - 0px);
 			height:100%;
 			float:left;
-			background-color:var(--secondary-color)
+			background-color:var(--secondary-color);
+			overflow-y:scroll; 
 		}
 		
 		#header {
 		}
 		
-		#header > h2 {
-			/* margin-left:20px; */
+		#header > h1 {
 			color:var(--primary-color);
 			padding: 20px 0px 20px 20px;
 			margin: 0px;			
@@ -80,8 +80,6 @@
 		#body{
 			padding-top:20px;
 			margin-left:20px;			
-			height:calc(100% - 100px);
-			overflow-y:scroll; 
 		}
 		
 		.card {
@@ -166,6 +164,9 @@
 		  background: --var(--primary-color-lighter); 
 		}		
 		
+		.highlight::-webkit-scrollbar { 
+			display: none; 
+		} 
 		
 		/* Extra small devices (phones, 600px and down) */
 		@media only screen and (max-width: 600px) {
@@ -280,7 +281,7 @@
   -moz-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
-  margin: 20px 0 20px 0;
+  /* margin: 20px 0 20px 0; */
   overflow: scroll;
 }
 
