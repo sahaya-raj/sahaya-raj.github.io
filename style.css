@@ -22,6 +22,15 @@
 			font-weight:400;
 		}
 
+		svg path {
+			fill:var(--secondary-color);
+		}
+
+		svg {
+			width:40px;
+			height:40px;
+		}
+
 		#navigation  i{
 			font-size:30px;
 			color: var(--secondary-color);
@@ -33,12 +42,12 @@
 		
 		#inner_wrapper {
 			background-color: white;
-			position: absolute;
-			width: calc(100% - 60px);
-			height: calc(100% - 60px);
-			left: 30px;
-			top: 30px;
-			box-shadow: 10px 10px 75px -29px var(--secondary-color);
+			/* position: absolute; */
+			/* width: calc(100% - 60px);
+			height: calc(100% - 60px); */
+			/* left: 30px;
+			top: 30px; */
+			/* box-shadow: 10px 10px 75px -29px var(--secondary-color); */
 		}
 		
 		#left_bar {
@@ -62,8 +71,10 @@
 		}
 		
 		#header > h2 {
-			margin-left:20px;
+			/* margin-left:20px; */
 			color:var(--primary-color);
+			padding: 20px 0px 20px 20px;
+			margin: 0px;			
 		}
 		
 		#body{
@@ -258,11 +269,7 @@
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }		
-			
-	#inner_wrapper{
-		box-shadow: 10px 10px 75px -29px var(--primary-color);
-	}
-		
+					
 	
 	/* Highlight */
 	
